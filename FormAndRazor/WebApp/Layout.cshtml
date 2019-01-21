@@ -6,6 +6,11 @@
 </head>
 <body>
     @DateTime.Today.ToLongDateString()
+    <div class="container">
+        <div class="jumbotron">
+            @RenderSection("Banner")
+        </div>
+    </div>
     @RenderSection("banner")
     @RenderBody()
     @RenderSection("Footer", required: false)

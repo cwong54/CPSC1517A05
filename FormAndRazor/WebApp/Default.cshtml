@@ -1,14 +1,15 @@
 ﻿@{
     Layout = "~/Layout.cshtml";
     Page.Title = "First Page";
-
-@section banner{
-    <h1>Hello </h1>
+    @section head {
+    <h1>Hi</h1>}
+    @section banner{
+        <h1>Hello </h1>
+        }
+    @section footer{
+        &copy; CPSC1517 NAIT all rights reserved
     }
-@section footer{
-    &copy; CPSC1517 NAIT all rights reserved
-}
-<h1>Default content page</h1>
-<p>Hello World!</p>
-<hr style="line-height:5px"/>
+    <h1>Default content page</h1>
+    <p>Hello World!</p>
+    <hr style="line-height:5px"/>
 }
