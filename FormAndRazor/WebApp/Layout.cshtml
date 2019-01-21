@@ -5,6 +5,8 @@
     @RenderSection("head", required: false)
 </head>
 <body>
+    @DateTime.Today.ToLongDateString()
+    @RenderSection("banner")
     @RenderBody()
     @RenderSection("Footer", required: false)
 </body>
