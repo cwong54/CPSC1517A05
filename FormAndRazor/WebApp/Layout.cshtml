@@ -1,18 +1,21 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
     <title>@Page.Title</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
     @RenderSection("head", required: false)
 </head>
 <body>
     @DateTime.Today.ToLongDateString()
-    <div class="container">
+    <div class="container-fluid">
         <div class="jumbotron">
-            @RenderSection("Banner")
+            @RenderSection("banner")
         </div>
+
+        @RenderBody()
+        @RenderSection("footer", required: false)
     </div>
-    @RenderSection("banner")
-    @RenderBody()
-    @RenderSection("Footer", required: false)
 </body>
 </html>
