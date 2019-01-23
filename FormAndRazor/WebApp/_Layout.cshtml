@@ -10,6 +10,14 @@
 <body>
     @DateTime.Today.ToLongDateString()
     <div class="container-fluid">
+        <div class="navbar navbar-default navbar-fixeditop">
+            <!--Brand area of the menu-->
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-size:x-large">
+                    <strong>Razor Samples</strong>
+                </a>
+            </div>
+        </div>
         <div class="jumbotron">
             @RenderSection("banner")
         </div>
