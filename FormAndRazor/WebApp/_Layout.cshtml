@@ -1,11 +1,18 @@
+@*All files reference to this one, technically the index.html*@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+@*Just assigned Page.Title to the Layout/index.html page*@
     <title>@Page.Title</title>
+    @*Declaring which files to associate to what such as script, link, script in this case.*@
     <script src="~/Scripts/jquery-3.3.1.js"></script>
+    @*Reference/Connect to CSS file*@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/bootstrap.js"></script>
+    
+    @*Required is for? To be used to indicate if this layout page must have a scripts section.*@
     @RenderSection("head", required: false)
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -15,6 +22,7 @@
             @RenderSection("banner")
         </div>
 
+@*Calling method, @MethodName()???*@
         @RenderBody()
         @RenderSection("footer", required: false)
     </div>

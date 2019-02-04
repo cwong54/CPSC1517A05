@@ -2,6 +2,9 @@
     Layout = "~/_Layout.cshtml";
     Page.Title = "RadioButtons";
     //obtain the incoming data values
+    //languagegroup is the form name
+    //language is the variable being stored the information coming from the form "languagegroup"
+    //Hence language = set, Request.Form = get
     var language = Request.Form["languagegroup"];
     var script = Request.Form["scriptgroup"];
     if (language == null)

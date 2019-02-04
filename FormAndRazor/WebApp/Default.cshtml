@@ -1,9 +1,14 @@
 @{
+    //References the _Layout.cshtml page
+    //Hence this is a split part of the html page it is referencing to
+    //A way to associate this file to that file indicated below
     Layout = "~/_Layout.cshtml";
+    //Assigned Page.Title is done on _Layout.cshtml, we are just assigning a value to it atm.
     Page.Title = "First Page";
 }
 
 @section head{
+    @* @Can also be used as a pointer?*@
     <link href="~/Content/MyCustomStyles.css" rel="stylesheet" />
 }
 
